@@ -1,0 +1,1 @@
+"""JobBot public portfolio project."""

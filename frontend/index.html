@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <script>
+    try {
+      const saved = localStorage.getItem("jobbot-theme");
+      document.documentElement.dataset.theme = saved === "light" || saved === "dark"
+        ? saved : matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    } catch (_) { document.documentElement.dataset.theme = "light"; }
+  </script>
+  <title>JobBot · Matching workspace</title>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>

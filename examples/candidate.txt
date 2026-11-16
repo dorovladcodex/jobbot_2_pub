@@ -1,0 +1,4 @@
+Alex Morgan
+Built Python APIs with FastAPI and deployed services on Docker.
+Created PostgreSQL pipelines and added LLM evaluation with Python.
+Designed LangGraph workflows with human review and model monitoring.
